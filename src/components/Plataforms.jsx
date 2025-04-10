@@ -22,24 +22,16 @@ const iconVariants = (duration) => ({
 });
 const Plataforms = () => {
   return (
-    <div className="pb-20">
+    <div className="pb-14 py-14">
       <motion.h2
-        whileInView={{ opacity: 1}}
-        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="mb-10 text-center text-4xl font-bold text-primary"
+        className="mb-10 text-center text-3xl font-bold text-primary"
       >
-        Plataformas
+        Transformo Seus Vídeos Para As Melhores Plataformas
       </motion.h2>
 
-      <motion.p
-        whileInView={{ opacity: 1}}
-        initial={{ opacity: 0}}
-        transition={{ duration: 1, ease: "easeInOut" }}
-        className="text-center text-2xl my-10"
-      >
-        Transformando Seus Vídeos Para As Melhores Plataformas
-      </motion.p>
       <motion.div
         whileInView={{ opacity: 1 }}
         initial={{ opacity: 0 }}

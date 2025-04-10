@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Marketing = () => {
   return (
-    <div className="grid pb-5 place-content-center px-4 text-yellow-50">
+    <div className="grid pt-10 place-content-center text-yellow-50">
       <h1 className="max-w-2xl text-center text-5xl leading-snug">
         Eleve o seu{" "}
         <span className="relative">

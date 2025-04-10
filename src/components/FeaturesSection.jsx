@@ -13,7 +13,7 @@ const FeaturesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="group relative text-3xl font-bold text-center sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-yellow-400 to-pink-600 animate-gradient-xy transition-colors duration-[600ms]">
+          <h2 className="group relative text-3xl font-bold text-center sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-yellow-200 to-pink-300 animate-gradient-xy transition-colors duration-[600ms]">
             Sobre meus serviços
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl text-center">

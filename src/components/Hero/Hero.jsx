@@ -1,78 +1,90 @@
-import profilePic from "../../assets/raviKumarProfile.webp";
-import HeroButton from "./HeroButton";
-import HeroText from "./HeroText";
-import { motion } from "framer-motion";
+"use client";
 
-const containerVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.5,
-    },
-  },
-};
+import { motion } from "framer-motion";
+import imagem from "../../assets/raviKumarProfile.webp";
 
 const Hero = () => {
   return (
-    <motion.div
-      className="flex flex-col items-center justify-center min-h-screen pb-4 lg:mb-20 px-6"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full">
+    <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-center px-4">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
+        {/* Texto à esquerda */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-2xl md:text-4xl lg:text-7xl font-bold ">
+            {"Transforme suas ideias em vídeos incríveis"
+              .split(" ")
+              .map((word, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+                  animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: index * 0.1,
+                    ease: "easeInOut",
+                  }}
+                  className="mr-2 inline-block"
+                >
+                  {word}
+                </motion.span>
+              ))}
+          </h1>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.8 }}
+            className="mt-6 max-w-xl text-lg font-normal text-slate-700 dark:text-slate-300"
+          >
+            Transformo suas ideias em vídeos curtos, impactantes e
+            profissionais. Seja para negócios, projetos pessoais ou redes
+            sociais, minhas edições são pensadas para atrair, engajar e gerar
+            resultados de verdade.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 1 }}
+            className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4"
+          >
+            <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+              <a
+                href="https://wa.me/558888301454?text=Ol%C3%A1%2C%20vi%20seu%20portifolio%20e%20me%20interessei"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Entre em contato
+              </a>
+            </button>
+            <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Veja meus projetos
+              </a>
+            </button>
+          </motion.div>
+        </div>
+
+        {/* Imagem à direita */}
         <motion.div
-          className="w-full lg:w-1/2 order-2 lg:order-1 flex justify-center lg:justify-center"
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          <div className="flex flex-col items-center lg:items-start mt-10 gap-1 text-center lg:text-left">
-            <h2 className="py-1 text-6xl font-medium t">
-              Eduardo Oliveira
-            </h2>
-            <span>
-              <HeroText />
-            </span>
-            <motion.p
-              className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 2 }}
-            >
-              Edição de vídeo com precisão e criatividade. Transformo seus vídeos
-              brutos em narrativas envolventes, destacando cada detalhe com
-              qualidade, fluidez e impacto visual. Seu projeto ganha vida em
-              cada frame.
-            </motion.p>
-            <div>
-              <HeroButton />
-            </div>
-          </div>
-        </motion.div>
-        <motion.div
-          className="w-full lg:w-1/2 order-1 lg:order-2 flex justify-center"
+          className="w-full lg:w-1/2 flex justify-center"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          transition={{ duration: 1 }}
         >
-          <div className="flex justify-center lg:p-8">
-            <motion.img
-              src={profilePic}
-              alt="/"
-              className="border border-stone-900 rounded-3xl"
-              width={650}
-              height={650}
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
+          <div className="rounded-3xl overflow-hidden border border-neutral-200 dark:border-neutral-800 shadow-md">
+            <img
+              src={imagem}
+              alt="Foto de perfil"
+              className="object-cover w-full h-auto"
             />
           </div>
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
