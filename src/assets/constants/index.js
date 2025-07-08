@@ -1,4 +1,5 @@
 import review from "../review.jpeg";
+import testeEmPe from "../teste_em_pe.mp4";
 
 export const clientReviews = [
   {
@@ -6,31 +7,13 @@ export const clientReviews = [
     name: "Emily Johnson",
     position: "Marketing Director at GreenLeaf",
     img: review,
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched.",
+    review: testeEmPe,
   },
   {
     id: 2,
     name: "Mark Rogers",
     position: "Founder of TechGear Shop",
     img: review,
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
-  },
-  {
-    id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
-    img: review,
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-  },
-  {
-    id: 4,
-    name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
-    img: review,
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
+    review: testeEmPe,
   },
 ];

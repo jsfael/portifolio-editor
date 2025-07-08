@@ -39,34 +39,42 @@ const TiltCard = ({ item }) => {
 
   return (
     <div className="bg-black bg-opacity-20 p-4 rounded-lg">
-      {" "}
-      {/* Fundo preto atrás do card */}
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ transformStyle: "preserve-3d", transform }}
-        className="relative p-6 rounded-lg bg-gray-300 shadow-lg" // Card branco
+        className="relative p-10 rounded-lg bg-gray-300 shadow-lg flex flex-col items-start min-h-[320px] sm:min-h-[480px]"
       >
-        <p className="text-black font-light">{item.review}</p>
-        <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start gap-5 mt-7">
-          <div className="flex gap-3">
+        {/* Informações do cliente */}
+        <div className="flex flex-col gap-4 w-full">
+          <div className="flex gap-3 items-center">
             <img
               src={item.img}
               alt="reviewer"
-              className="w-12 h-12 rounded-full"
+              className="w-14 h-14 rounded-full"
             />
-            <div className="flex flex-col">
+            <div>
               <p className="font-semibold text-black">{item.name}</p>
               <p className="text-gray-700 md:text-base text-sm font-light">
                 {item.position}
               </p>
             </div>
           </div>
-          <div className="flex self-end items-center gap-2">
+          <div className="flex items-center gap-2 mt-2">
             {Array.from({ length: 5 }).map((_, index) => (
               <FaStar key={index} className="w-5 h-5 text-yellow-500" />
             ))}
+          </div>
+          {/* Vídeo com altura maior */}
+          <div className="w-full mt-4 rounded overflow-hidden">
+            {item.review && (
+              <video
+                src={item.review}
+                controls
+                className="w-full h-64 sm:h-96 object-contain rounded-md bg-black"
+              />
+            )}
           </div>
         </div>
       </motion.div>
@@ -102,7 +110,7 @@ const Clients = () => {
         </span>
         <span className="whitespace-nowrap ml-2">:</span>
       </motion.h3>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-12">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-12">
         {clientReviews.map((item) => (
           <TiltCard key={`review-${item.id}`} item={item} />
         ))}
