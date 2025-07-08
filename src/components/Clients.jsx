@@ -44,7 +44,7 @@ const TiltCard = ({ item }) => {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ transformStyle: "preserve-3d", transform }}
-        className="relative p-10 rounded-lg bg-gray-300 shadow-lg flex flex-col items-start min-h-[320px] sm:min-h-[480px]"
+        className="relative p-10 rounded-lg bg-gray-300 shadow-lg flex flex-col items-start min-h-[400px] sm:min-h-[480px]"
       >
         {/* Informações do cliente */}
         <div className="flex flex-col gap-4 w-full">
@@ -72,7 +72,7 @@ const TiltCard = ({ item }) => {
               <video
                 src={item.review}
                 controls
-                className="w-full h-80 sm:h-96 object-contain rounded-md bg-black"
+                className="w-full h-96 sm:h-96 object-contain rounded-md bg-black"
               />
             )}
           </div>
