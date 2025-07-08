@@ -72,7 +72,7 @@ const TiltCard = ({ item }) => {
               <video
                 src={item.review}
                 controls
-                className="w-full h-64 sm:h-96 object-contain rounded-md bg-black"
+                className="w-full h-80 sm:h-96 object-contain rounded-md bg-black"
               />
             )}
           </div>
