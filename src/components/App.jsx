@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./Navbar";
-import Hero from "./Hero/Hero";
+import Hero from "./Hero";
 import Plataforms from "./Plataforms";
 import Clients from "./Clients";
 import Contact from "./Contact";

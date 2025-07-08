@@ -37,6 +37,9 @@ const Footer = () => {
         <p className="mt-4">
           Copyright © {new Date().getFullYear()} - All rights reserved
         </p>
+        <p className="mt-1 text-sm text-gray-300">
+          Site desenvolvido profissionalmente por Rafael Lima.
+        </p>
       </aside>
     </footer>
   );

@@ -69,8 +69,8 @@ const FeaturesSection = () => {
             transition={{ duration: 1 }}
           >
             <img
-              width="600"
-              height="600"
+              width="700"
+              height="700"
               src="https://images.unsplash.com/photo-1516542076529-1ea3854896f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxNHx8Y29tcHV0ZXJ8ZW58MHwwfHx8MTY5OTE3MDk1N3ww&ixlib=rb-4.0.3&q=80&w=1080"
               className="mx-auto rounded-lg shadow-lg"
               alt="Feature Illustration"
@@ -93,7 +93,7 @@ const features = [
   {
     title: "Resultados expressivos.",
     description:
-      "Com minha edição de vídeos, seu negócio alcança mais leads e resultados financeiros concretos.",
+      "Com minha edição de vídeos, seu negócio alcança mais views, leads e resultados financeiros concretos.",
     color: "#FFD700", // Yellow
     icon: <BiBookmarkPlus size={28} />,
   },
