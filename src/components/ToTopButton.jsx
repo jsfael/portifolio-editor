@@ -35,7 +35,7 @@ function ToTopButton() {
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ duration: 0.3 }}
                     onClick={scrollToTop}
-                    className="fixed bottom-5 right-5 p-2 text-2xl bg-white text-black border-none rounded cursor-pointer"
+                    className="fixed bottom-5 right-5 p-2 text-xl bg-white text-black border-none rounded cursor-pointer"
                 >
                     <FaArrowUpLong />
                 </motion.button>

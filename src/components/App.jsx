@@ -25,7 +25,7 @@ const App = () => {
           <Marketing />
           <Plataforms />
           <FeaturesSection />
-          <Clients />
+          <Clients className="mt-5" />
           <Contact />
         </div>
       </div>

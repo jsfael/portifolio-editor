@@ -21,7 +21,6 @@ const FeaturesSection = () => {
           </p>
         </motion.div>
 
-        {/* Alterei a estrutura para flex-col-reverse no mobile */}
         <div className="flex flex-col-reverse lg:flex-row lg:gap-8 lg:items-center">
           <div>
             <div className="mt-4 space-y-12">
@@ -60,7 +59,6 @@ const FeaturesSection = () => {
             </div>
           </div>
 
-          {/* Imagem com padding no mobile */}
           <motion.div
             aria-hidden="true"
             className="lg:mt-0 mt-4 pb-10 lg:pb-0"

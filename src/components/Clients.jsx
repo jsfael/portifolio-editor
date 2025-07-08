@@ -38,21 +38,20 @@ const TiltCard = ({ item }) => {
   };
 
   return (
-    <div className="bg-black bg-opacity-20 p-4 rounded-lg">
+    <div className="bg-black bg-opacity-20 p-3 rounded-lg">
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ transformStyle: "preserve-3d", transform }}
-        className="relative p-10 rounded-lg bg-gray-300 shadow-lg flex flex-col items-start min-h-[400px] sm:min-h-[480px]"
+        className="relative p-6 rounded-lg bg-gray-200 shadow-lg flex flex-col items-start min-h-[200px] sm:min-h-[240px]"
       >
-        {/* Informações do cliente */}
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col gap-3 w-full">
           <div className="flex gap-3 items-center">
             <img
               src={item.img}
               alt="reviewer"
-              className="w-14 h-14 rounded-full"
+              className="w-12 h-12 rounded-full"
             />
             <div>
               <p className="font-semibold text-black">{item.name}</p>
@@ -84,7 +83,7 @@ const TiltCard = ({ item }) => {
 
 const Clients = () => {
   return (
-    <section className="sm:px-10 px-5 my-7">
+    <section className="sm:px-10 px-5 mb-4">
       <motion.h3
         className="flex flex-wrap sm:flex-nowrap justify-center sm:text-4xl text-3xl font-semibold text-white group text-center"
         initial={{ opacity: 0 }}
