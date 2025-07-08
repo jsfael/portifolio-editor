@@ -74,8 +74,13 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <motion.div
-            transition={{ type: "spring", stiffness: 120, damping: 10, duration: 0.7 }}
-            className="rounded-3xl overflow-hidden border border-neutral-200 dark:border-neutral-800 shadow-md max-w-xl w-full"
+            transition={{
+              type: "spring",
+              stiffness: 120,
+              damping: 10,
+              duration: 0.7,
+            }}
+            className="rounded-3xl overflow-hidden shadow-md max-w-xl w-full"
           >
             <img
               src={imagem}
