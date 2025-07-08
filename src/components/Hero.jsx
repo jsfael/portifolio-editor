@@ -80,7 +80,7 @@ const Hero = () => {
               damping: 10,
               duration: 0.7,
             }}
-            className="rounded-3xl overflow-hidden border border-neutral-200 dark:border-neutral-800 shadow-md max-w-xl w-full"
+            className="rounded-3xl overflow-hidden border  shadow-md max-w-xl w-full"
           >
             <img
               src={imagem}
