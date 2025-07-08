@@ -46,24 +46,24 @@ const Hero = () => {
             transition={{ duration: 0.3, delay: 1 }}
             className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4"
           >
-            <button className="w-72 sm:w-60 transform rounded-lg bg-gray-900 px-8 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-900 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200">
-              <a
-                href="https://wa.me/558888301454?text=Ol%C3%A1%2C%20vi%20seu%20portifolio%20e%20me%20interessei%20em%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20mais!"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Entre em contato
-              </a>
-            </button>
-            <button className="w-72 sm:w-60 transform rounded-lg bg-[#111111] border border-[#2a2a2a] px-8 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-[#555] hover:bg-[#1c1c1c]">
-              <a
-                href="https://www.instagram.com/_dudueditor/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Veja meus projetos
-              </a>
-            </button>
+            <a
+              href="https://wa.me/558888301454?text=Ol%C3%A1%2C%20vi%20seu%20portifolio%20e%20me%20interessei%20em%20seus%20servi%C3%A7os.%20Gostaria%20de%20saber%20mais!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-72 sm:w-60 transform rounded-lg bg-gray-900 px-8 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-900 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200 flex items-center justify-center"
+              style={{ textDecoration: "none" }}
+            >
+              Entre em contato
+            </a>
+            <a
+              href="https://www.instagram.com/_dudueditor/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-72 sm:w-60 transform rounded-lg bg-[#111111] border border-[#2a2a2a] px-8 py-3 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-[#555] hover:bg-[#1c1c1c] flex items-center justify-center"
+              style={{ textDecoration: "none" }}
+            >
+              Veja meus projetos
+            </a>
           </motion.div>
         </div>
         {/* Imagem à direita */}
