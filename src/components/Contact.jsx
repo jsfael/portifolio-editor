@@ -33,7 +33,7 @@ const Footer = () => {
             e.rdrgs18@gmail.com
           </p>
         </div>
-        <p className="font-bold mt-2">Tornando ideias em vídeos dês de 2020</p>
+        <p className="font-bold mt-2">Tornando ideias em vídeos desde 2020</p>
         <p className="mt-4">
           Copyright © {new Date().getFullYear()} - All rights reserved
         </p>
