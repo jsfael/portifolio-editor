@@ -8,7 +8,7 @@ import {
 import { FaStar } from "react-icons/fa";
 import { clientReviews } from "../assets/constants/index.js";
 
-const ROTATION_RANGE = 17; // Reduzindo a intensidade da rotação
+const ROTATION_RANGE = 17; 
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
 const TiltCard = ({ item }) => {
@@ -38,7 +38,11 @@ const TiltCard = ({ item }) => {
   };
 
   return (
-    <div className="bg-black bg-opacity-20 p-3 rounded-lg">
+    <motion.div
+      className="bg-black bg-opacity-20 p-3 rounded-lg"
+      whileHover={{ scale: 1.01 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+    >
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -77,7 +81,7 @@ const TiltCard = ({ item }) => {
           </div>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
