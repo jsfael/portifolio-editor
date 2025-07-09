@@ -34,9 +34,18 @@ const FeaturesSection = () => {
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-md">
+                    <motion.div
+                      className="flex items-center justify-center w-12 h-12 rounded-md"
+                      initial={{ filter: "grayscale(100%)" }}
+                      whileInView={{ filter: "grayscale(0%)" }}
+                      transition={{
+                        duration: 1,
+                        ease: "easeInOut",
+                        delay: 0.5,
+                      }}
+                    >
                       {feature.icon}
-                    </div>
+                    </motion.div>
                   </div>
                   <div className="ml-4">
                     <motion.h4
@@ -86,28 +95,28 @@ const features = [
     description:
       "Transformo suas ideias em vídeos criativos que capturam a essência da sua mensagem.",
     color: "#800080", // Purple
-    icon: <IoRocketOutline size={28} />,
+    icon: <IoRocketOutline size={28} color="#800080" />,
   },
   {
     title: "Resultados expressivos.",
     description:
       "Com minha edição de vídeos, seu negócio alcança mais views, leads e resultados financeiros concretos.",
     color: "#FFD700", // Yellow
-    icon: <BiBookmarkPlus size={28} />,
+    icon: <BiBookmarkPlus size={28} color="#FFD700" />,
   },
   {
     title: "Edição profissional.",
     description:
       "Vídeos com edição profissional, fluidez e grande poder de engajamento.",
     color: "#FF69B4", // Hot Pink
-    icon: <HiOutlineVideoCamera size={28} />,
+    icon: <HiOutlineVideoCamera size={28} color="#FF69B4" />,
   },
   {
     title: "Curto prazo de entregas.",
     description:
       "Edições ágeis sem abrir mão da qualidade, sempre dentro do prazo combinado.",
     color: "#32CD32", // Green
-    icon: <MdOutlineInsertDriveFile size={28} />,
+    icon: <MdOutlineInsertDriveFile size={28} color="#32CD32" />,
   },
 ];
 
