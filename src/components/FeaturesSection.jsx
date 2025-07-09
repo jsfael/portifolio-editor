@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
-import { IoRocketOutline } from "react-icons/io5";
-import { BiBookmarkPlus } from "react-icons/bi";
-import { HiOutlineVideoCamera } from "react-icons/hi";
-import { MdOutlineInsertDriveFile } from "react-icons/md";
+import { features } from "../assets/constants/index";
 
 const FeaturesSection = () => {
   return (
@@ -30,8 +27,9 @@ const FeaturesSection = () => {
                   className="flex"
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1, delay: index * 0.2 }}
+                  transition={{ duration: 1 }}
                   whileHover={{ scale: 1.02 }}
+                  delay={1.5}
                 >
                   <div className="flex-shrink-0">
                     <motion.div
@@ -88,36 +86,5 @@ const FeaturesSection = () => {
     </section>
   );
 };
-
-const features = [
-  {
-    title: "Impulsiono as suas ideias.",
-    description:
-      "Transformo suas ideias em vídeos criativos que capturam a essência da sua mensagem.",
-    color: "#800080", // Purple
-    icon: <IoRocketOutline size={28} color="#800080" />,
-  },
-  {
-    title: "Resultados expressivos.",
-    description:
-      "Com minha edição de vídeos, seu negócio alcança mais views, leads e resultados financeiros concretos.",
-    color: "#FFD700", // Yellow
-    icon: <BiBookmarkPlus size={28} color="#FFD700" />,
-  },
-  {
-    title: "Edição profissional.",
-    description:
-      "Vídeos com edição profissional, fluidez e grande poder de engajamento.",
-    color: "#FF69B4", // Hot Pink
-    icon: <HiOutlineVideoCamera size={28} color="#FF69B4" />,
-  },
-  {
-    title: "Curto prazo de entregas.",
-    description:
-      "Edições ágeis sem abrir mão da qualidade, sempre dentro do prazo combinado.",
-    color: "#32CD32", // Green
-    icon: <MdOutlineInsertDriveFile size={28} color="#32CD32" />,
-  },
-];
 
 export default FeaturesSection;
