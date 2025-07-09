@@ -8,7 +8,7 @@ import {
 import { FaStar } from "react-icons/fa";
 import { clientReviews } from "../assets/constants/index.js";
 
-const ROTATION_RANGE = 17; 
+const ROTATION_RANGE = 14; 
 const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
 const TiltCard = ({ item }) => {
