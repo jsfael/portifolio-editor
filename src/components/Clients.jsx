@@ -69,14 +69,13 @@ const TiltCard = ({ item }) => {
               <FaStar key={index} className="w-5 h-5 text-yellow-500" />
             ))}
           </div>
-          {/* Vídeo com altura maior */}
           <div className="w-full mt-4 rounded overflow-hidden">
             {item.review && (
-              <video
-                src={item.review}
-                controls
-                className="w-full h-96 sm:h-96 object-contain rounded-md bg-black"
-              />
+              <div>
+                <p className="text-gray-800 text-base md:text-lg font-light">
+                  {item.review}
+                </p>
+              </div>
             )}
           </div>
         </div>
@@ -87,7 +86,7 @@ const TiltCard = ({ item }) => {
 
 const Clients = () => {
   return (
-    <section className="sm:px-10 px-5 mb-4">
+    <section className="sm:px-10 px-5 my-7">
       <motion.h3
         className="flex flex-wrap sm:flex-nowrap justify-center sm:text-4xl text-3xl font-semibold text-white group text-center"
         initial={{ opacity: 0 }}
@@ -113,7 +112,7 @@ const Clients = () => {
         </span>
         <span className="whitespace-nowrap ml-2">:</span>
       </motion.h3>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-12">
+      <div className=" grid md:grid-cols-2 grid-cols-1 gap-5 mt-12 ">
         {clientReviews.map((item) => (
           <TiltCard key={`review-${item.id}`} item={item} />
         ))}

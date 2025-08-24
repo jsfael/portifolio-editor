@@ -11,14 +11,14 @@ export const clientReviews = [
     name: "Emily Johnson",
     position: "Marketing Director at GreenLeaf",
     img: review,
-    review: testeEmPe,
+    review: "O trabalho de edição superou todas as expectativas! O vídeo ficou incrível e ajudou muito na divulgação da nossa campanha.",
   },
   {
     id: 2,
     name: "Mark Rogers",
     position: "Founder of TechGear Shop",
     img: review,
-    review: testeEmPe,
+    review: "Profissionalismo e criatividade definem o serviço. Recebi o vídeo rapidamente e com excelente qualidade. Recomendo!",
   },
 ];
 
