@@ -1,5 +1,4 @@
 import review from "../review.jpeg";
-import testeEmPe from "../teste_em_pe.mp4";
 import { IoRocketOutline } from "react-icons/io5";
 import { BiBookmarkPlus } from "react-icons/bi";
 import { HiOutlineVideoCamera } from "react-icons/hi";
@@ -9,17 +8,32 @@ export const clientReviews = [
   {
     id: 1,
     name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
+    position: "Diretora de Marketing na GreenLeaf",
     img: review,
     review: "O trabalho de edição superou todas as expectativas! O vídeo ficou incrível e ajudou muito na divulgação da nossa campanha.",
   },
   {
     id: 2,
     name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
+    position: "Fundador da TechGear Shop",
     img: review,
     review: "Profissionalismo e criatividade definem o serviço. Recebi o vídeo rapidamente e com excelente qualidade. Recomendo!",
   },
+    {
+      id: 3,
+      name: "Ana Souza",
+      position: "Gerente de Projetos na StartUpX",
+      img: review,
+      review: "A edição trouxe um diferencial para nosso pitch. O resultado ficou moderno e dinâmico, exatamente como precisávamos!",
+    },
+    {
+      id: 4,
+      name: "Carlos Lima",
+      position: "Diretor de Comunicação na Agência Criativa",
+      img: review,
+      review: "Excelente atendimento e entrega rápida. O vídeo ficou com ótima qualidade e superou nossas expectativas.",
+    },
+  
 ];
 
 export const features = [
