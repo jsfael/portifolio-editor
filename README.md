@@ -2,8 +2,6 @@
 
 Este projeto é um portfólio profissional desenvolvido com React, TailwindCSS e Framer Motion, garantindo um visual moderno, responsivo e fácil de personalizar para diferentes identidades visuais.
 
-## Funcionalidades
-
 
 ## Hospedagem
 
